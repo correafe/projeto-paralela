@@ -5,5 +5,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface VeiculoRepository extends JpaRepository<Veiculo, String> {
-    // Pronto! O Spring faz a mágica do SQL aqui.
+// Interface de persistência gerenciada pelo Spring Data JPA
 }

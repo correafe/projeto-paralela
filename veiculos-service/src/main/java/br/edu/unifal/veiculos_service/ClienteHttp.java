@@ -6,7 +6,7 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.Scanner;
-import java.util.Locale; // Adicionado para corrigir a formatação de números
+import java.util.Locale; 
 
 public class ClienteHttp {
     private static final String BASE_URL = "http://localhost:8082/veiculos";
@@ -69,7 +69,6 @@ public class ClienteHttp {
         System.out.print("Valor: "); 
         double valor = Double.parseDouble(scanner.nextLine());
 
-        // CORREÇÃO: Usando Locale.US para garantir pontos em decimais no JSON
         String json = String.format(Locale.US,
             "{\"placa\":\"%s\",\"marca\":\"%s\",\"modelo\":\"%s\",\"ano\":%d,\"cor\":\"%s\",\"quilometragem\":%.2f,\"valor\":%.2f}",
             placa, marca, modelo, ano, cor, km, valor
@@ -150,7 +149,6 @@ public class ClienteHttp {
         System.out.print("KM: "); double km = Double.parseDouble(scanner.nextLine());
         System.out.print("Valor: "); double valor = Double.parseDouble(scanner.nextLine());
 
-        // CORREÇÃO: Usando Locale.US aqui também
         String json = String.format(Locale.US,
             "{\"placa\":\"%s\",\"marca\":\"%s\",\"modelo\":\"%s\",\"ano\":%d,\"cor\":\"%s\",\"quilometragem\":%.2f,\"valor\":%.2f}",
             placa, marca, modelo, ano, cor, km, valor

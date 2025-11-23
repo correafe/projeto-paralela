@@ -7,7 +7,7 @@ import lombok.AllArgsConstructor;
 
 @Entity
 @Table(name = "tb_veiculos")
-@Data // O Lombok cria os Getters, Setters, toString, etc. automaticamente
+@Data 
 @NoArgsConstructor // Construtor vazio
 @AllArgsConstructor // Construtor com todos os argumentos
 public class Veiculo {

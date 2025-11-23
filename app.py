@@ -30,7 +30,6 @@ if menu == "Listar Todos":
             dados = response.json()
             if dados:
                 df = pd.DataFrame(dados)
-                # Reordenar colunas para ficar mais bonito
                 colunas_ordem = ["placa", "marca", "modelo", "ano", "cor", "quilometragem", "valor"]
                 # Garante que só exibe colunas que existem no JSON
                 cols_to_show = [c for c in colunas_ordem if c in df.columns]
@@ -55,7 +54,6 @@ elif menu == "Buscar por Placa":
                     veiculo = response.json()
                     st.success("✅ Veículo Encontrado!")
                     
-                    # Mostra os dados bonitinhos em cartões
                     c1, c2, c3 = st.columns(3)
                     c1.metric("Modelo", veiculo.get("modelo", "-"))
                     c2.metric("Marca", veiculo.get("marca", "-"))
