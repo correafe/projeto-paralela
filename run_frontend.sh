@@ -21,7 +21,7 @@ fi
 echo "Ativando ambiente..."
 source venv/bin/activate
 
-# 4. Instala as dependências silenciosamente
+# 4. Instala as dependências
 echo "Instalando dependências (pode levar alguns segundos)..."
 pip install -r requirements.txt > /dev/null 2>&1
 

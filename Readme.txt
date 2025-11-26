@@ -4,12 +4,12 @@ PROJETO: SISTEMA DE GESTÃO DE VEÍCULOS EM MICROSERVIÇOS
 
 1. IDENTIFICAÇÃO
 ----------------
-Desenvolvedores:
+Desenvolvedor:
 - Felipe de Godoi Corrêa
-- Gabriel Keven
 
 Disciplina: Computação Paralela e Distribuída
 Orientador: Prof. Paulo Alexandre Bressan
+
 
 2. DESCRIÇÃO DO PROJETO
 -----------------------
@@ -23,6 +23,7 @@ A solução é composta por:
 3. Cliente Java: Aplicação de terminal que consome a API via Gateway.
 4. Frontend Web: Interface gráfica em Python (Streamlit) para interação amigável.
 
+
 3. FUNCIONALIDADES
 ------------------
 - Inserir novo veículo (Placa, Marca, Modelo, Ano, Cor, KM, Valor).
@@ -31,6 +32,7 @@ A solução é composta por:
 - Alterar dados de um veículo existente.
 - Listar todos os veículos cadastrados.
 - Interface visual com tabelas e formulários (Web).
+
 
 4. FERRAMENTAS E TECNOLOGIAS
 ----------------------------
@@ -41,6 +43,7 @@ A solução é composta por:
 - Interface Web: Streamlit.
 - Build: Maven.
 
+
 5. REQUISITOS MÍNIMOS
 ---------------------
 - Processador: Dual Core 2.0GHz ou superior.
@@ -48,6 +51,7 @@ A solução é composta por:
 - Espaço em Disco: 500MB livres.
 - Sistema Operacional: Linux (Ubuntu), Windows ou macOS.
 - Softwares instalados: Java JDK 17+, Maven, Python 3+, PostgreSQL.
+
 
 6. INSTRUÇÕES DE COMPILAÇÃO E EXECUÇÃO
 ======================================
